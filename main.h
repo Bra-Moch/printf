@@ -45,8 +45,8 @@ int print_octal(va_list l, flags_t *f);
 /* converter */
 char *convert(unsigned long int num, int base, int lowercase);
 
-/* qb_printf */
-int qb_printf(const char *format, ...);
+/* _printf */
+int _printf(const char *format, ...);
 
 /* get_print */
 int (*get_print(char s))(va_list, flags_t *);
