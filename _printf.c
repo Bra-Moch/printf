@@ -10,7 +10,7 @@
  * specifiers contained into fmt
  * Return: length of the formatted output string
  */
-int _printf(const char *format, ...)
+int qb_printf(const char *format, ...)
 {
 	int (*pfunc)(va_list, flags_t *);
 	const char *p;
@@ -46,4 +46,5 @@ int _printf(const char *format, ...)
 	_putchar(-1);
 	va_end(arguments);
 	return (count);
+
 }
