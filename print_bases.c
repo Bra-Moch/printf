@@ -3,9 +3,9 @@
 /**
  * print_hex - prints a number in hexadecimal base,
  * in lowercase
- * @l: va_list arguments from qb_printf
+ * @l: va_list arguments from _printf
  * @f: pointer to the struct flags that determines
- * if a flag is passed to qb_printf
+ * if a flag is passed to _printf
  * Description: the function calls convert() which in turns converts the input
  * number into the correct base and returns it as a string
  * Return: the number of char printed
@@ -25,9 +25,9 @@ int print_hex(va_list l, flags_t *f)
 /**
  * print_hex_big - prints a number in hexadecimal base,
  * in uppercase
- * @l: va_list arguments from qb_printf
+ * @l: va_list arguments from _printf
  * @f: pointer to the struct that determines
- * if a flag is passed to qb_printf
+ * if a flag is passed to _printf
  * Description: the function calls convert() which in turns converts the input
  * number into the correct base and returns it as a string
  * Return: the number of char printed
@@ -46,9 +46,9 @@ int print_hex_big(va_list l, flags_t *f)
 
 /**
  * print_binary - prints a number in base 2
- * @l: va_list arguments from qb_printf
+ * @l: va_list arguments from _printf
  * @f: pointer to the struct that determines
- * if a flag is passed to qb_printf
+ * if a flag is passed to _printf
  * Description: the function calls convert() which in turns converts the input
  * number into the correct base and returns it as a string
  * Return: the number of char printed
@@ -64,9 +64,9 @@ int print_binary(va_list l, flags_t *f)
 
 /**
  * print_octal - prints a number in base 8
- * @l: va_list arguments from qb_printf
+ * @l: va_list arguments from _printf
  * @f: pointer to the struct that determines
- * if a flag is passed to qb_printf
+ * if a flag is passed to _printf
  * Description: the function calls convert() which in turns converts the input
  * number into the correct base and returns it as a string
  * Return: the number of char printed
