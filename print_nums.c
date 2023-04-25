@@ -2,9 +2,9 @@
 
 /**
  * print_int - prints an integer
- * @l: va_list of arguments from _printf
+ * @l: va_list of arguments from qb_printf
  * @f: pointer to the struct flags determining
- * if a flag is passed to _printf
+ * if a flag is passed to qb_printf
  * Return: number of char printed
  */
 int print_int(va_list l, flags_t *f)
@@ -24,9 +24,9 @@ int print_int(va_list l, flags_t *f)
 
 /**
  * print_unsigned - prints an unsigned integer
- * @l: va_list of arguments from _printf
+ * @l: va_list of arguments from qb_printf
  * @f: pointer to the struct flags determining
- * if a flag is passed to _printf
+ * if a flag is passed to qb_printf
  * Return: number of char printed
  */
 int print_unsigned(va_list l, flags_t *f)
@@ -62,7 +62,7 @@ void print_number(int n)
 
 /**
  * count_digit - returns the number of digits in an integer
- * for _printf
+ * for qb_printf
  * @i: integer to evaluate
  * Return: number of digits
  */

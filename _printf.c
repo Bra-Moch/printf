@@ -3,14 +3,14 @@
 #include <stdio.h>
 
 /**
- * _printf - produces output according to a format
+ * qb_printf - produces output according to a format
  * @format: format string containing the characters and the specifiers
  * Description: this function will call the get_print() function that will
  * determine which printing function to call depending on the conversion
  * specifiers contained into fmt
  * Return: length of the formatted output string
  */
-int _printf(const char *format, ...)
+int qb_printf(const char *format, ...)
 {
 	int (*pfunc)(va_list, flags_t *);
 	const char *p;
@@ -39,7 +39,7 @@ int _printf(const char *format, ...)
 			pfunc = get_print(*p);
 			count += (pfunc)
 				? pfunc(arguments, &flags)
-				: _printf("%%%c", *p);
+				: qb_printf("%%%c", *p);
 		} else
 			count += _putchar(*p);
 	}

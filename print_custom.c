@@ -5,9 +5,9 @@
  * (0 < ASCII value < 32 or >= 127) are
  * printed this way: \x, followed by the ASCII code
  * value in hexadecimal (upper case - always 2 characters)
- * @l: va_list arguments from _printf
+ * @l: va_list arguments from qb_printf
  * @f: pointer to the struct flags that determines
- * if a flag is passed to _printf
+ * if a flag is passed to qb_printf
  * Return: number of char printed
  */
 int print_bigS(va_list l, flags_t *f)
@@ -39,9 +39,9 @@ int print_bigS(va_list l, flags_t *f)
 
 /**
  * print_rev - prints a string in reverse
- * @l: argument from _printf
+ * @l: argument from qb_printf
  * @f: pointer to the struct flags that determines
- * if a flag is passed to _printf
+ * if a flag is passed to qb_printf
  * Return: length of the printed string
  */
 int print_rev(va_list l, flags_t *f)
@@ -64,9 +64,9 @@ int print_rev(va_list l, flags_t *f)
 
 /**
  * print_rot13 - prints a string using rot13
- * @l: list of arguments from _printf
+ * @l: list of arguments from qb_printf
  * @f: pointer to the struct flags that determines
- * if a flag is passed to _printf
+ * if a flag is passed to qb_printf
  * Return: length of the printed string
  */
 int print_rot13(va_list l, flags_t *f)
@@ -96,7 +96,7 @@ int print_rot13(va_list l, flags_t *f)
 
 /**
  * print_percent - prints a percent
- * @l: va_list arguments from _printf
+ * @l: va_list arguments from qb_printf
  * @f: pointer to the struct flags in which we turn the flags on
  * Return: number of char printed
  */
