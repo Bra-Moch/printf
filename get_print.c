@@ -10,8 +10,10 @@
  * printing function
  * Return: a pointer to the matching printing function
  */
+
 int (*get_print(char s))(va_list, flags_t *)
 {
+	/** struct array that maps specifiers to function */
 	ph func_arr[] = {
 		{'i', print_int},
 		{'s', print_string},
@@ -32,6 +34,7 @@ int (*get_print(char s))(va_list, flags_t *)
 
 	register int i;
 
+	/** Loop through the array to find a match and return appro funct. */
 	for (i = 0; i < flags; i++)
 		if (func_arr[i].c == s)
 			return (func_arr[i].f);
