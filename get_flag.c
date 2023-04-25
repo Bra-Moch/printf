@@ -12,8 +12,10 @@ int get_flag(char s, flags_t *f)
 {
 	int i = 0;
 
+	/** check which flag is specified */
 	switch (s)
 	{
+		/** turn on the +,space and # flag and set i and 1 */
 		case '+':
 			f->plus = 1;
 			i = 1;
@@ -28,5 +30,6 @@ int get_flag(char s, flags_t *f)
 			break;
 	}
 
+	/** return 1 if a flag is turned on, 0 otherwise */
 	return (i);
 }
