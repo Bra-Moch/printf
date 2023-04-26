@@ -13,7 +13,7 @@
 int print_bigS(va_list l, flags_t *f)
 {
 	int i, count = 0;
-	char *res;
+	char *result;
 	char *s = va_arg(l, char *);
 
 	(void)f;
@@ -26,10 +26,10 @@ int print_bigS(va_list l, flags_t *f)
 		{
 			_puts("\\x");
 			count += 2;
-			res = convert(s[i], 16, 0);
-			if (!res[1])
+			result = convert(s[i], 16, 0);
+			if (!result[1])
 				count += _putchar('0');
-			count += _puts(res);
+			count += _puts(result);
 		}
 		else
 			count += _putchar(s[i]);

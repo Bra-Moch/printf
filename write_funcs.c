@@ -11,17 +11,17 @@
  */
 int _putchar(char c)
 {
-	static char buf[1024];
+	static char buff[1024];
 	static int i;
 
 	if (c == -1 || i >= 1024)
 	{
-		write(1, &buf, i);
+		write(1, &buff, i);
 		i = 0;
 	}
 	if (c != -1)
 	{
-		buf[i] = c;
+		buff[i] = c;
 		i++;
 	}
 	return (1);
@@ -37,7 +37,7 @@ int _puts(char *str)
 	register int i;
 
 	i = 0;
-	
+
 	while (str[i] != '\0')
 	{
 		_putchar(str[i]);
