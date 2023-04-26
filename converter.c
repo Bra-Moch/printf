@@ -12,14 +12,14 @@ char *convert(unsigned long int num, int base, int lowercase)
 {
 	/** Static variables for base chtrs and resulting string buffer */
 	static char *rep;
-	static char buffer[50];
+	static char buff[50];
 	char *ptr;
 
 	/** Set hexadecimal characters based on lowercase flag */
 	rep = (lowercase)
 		? "0123456789abcdef"
 		: "0123456789ABCDEF";
-	ptr = &buffer[49];
+	ptr = &buff[49];
 	*ptr = '\0';
 	/** perform the conversion */
 	do {
